@@ -24,7 +24,7 @@
                VerticalAlignment="Top" Width="55" Visibility="Visible" RenderTransformOrigin="-0.718,-1.625" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="628,34,0,0" Name="txtContatoTelefone" VerticalAlignment="Top" Width="137" />
 
-        <Button Content="Inserir" Height="32" HorizontalAlignment="Left" Margin="364,98,0,0" Name="btnInserir" VerticalAlignment="Top" Width="75" Click="btnInserir_Click" />        
+        <Button Content="Inserir" Height="32" HorizontalAlignment="Left" Margin="360,98,0,0" Name="btnInserir" VerticalAlignment="Top" Width="75" Click="btnInserir_Click" />        
         <Button Content="Atualizar" Height="32" HorizontalAlignment="Right" Margin="0,98,275,0" Name="btnAtualizar" VerticalAlignment="Top" Width="75" Click="btnAtualizar_Click" />
         <Button Content="Ordenar" Height="32" HorizontalAlignment="Right" Margin="0,98,548,0" Name="btnOrdenar" VerticalAlignment="Top" Width="75" Click="btnOrdenar_Click" />
         <Button Content="Imprimir" Height="32" HorizontalAlignment="Right" Margin="0,98,627,0" Name="btnImprimir" VerticalAlignment="Top" Width="75" Click="btnImprimir_Click" />
