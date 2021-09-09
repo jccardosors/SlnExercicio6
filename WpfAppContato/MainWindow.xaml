@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfAppContato.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppContato"
+        mc:Ignorable="d"
+        Title="Listagem de contatos" Height="450" Width="800"
+        Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Código" Height="28" HorizontalAlignment="Left" Margin="15,6,0,0" Name="label1" VerticalAlignment="Top" Width="57" Visibility="Visible" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="17,34,0,0" Name="txtContatoId" 
+                 VerticalAlignment="Top" Width="55" IsReadOnly="True" />
+
+        <Label Content="Nome" Height="28" HorizontalAlignment="Left" Margin="92,10,0,0" Name="label2" VerticalAlignment="Top" Width="44" Visibility="Visible" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="92,34,0,0" Name="txtContatoNome" 
+                 VerticalAlignment="Top" Width="282" />
+
+        <Label Content="E-mail" Height="28" HorizontalAlignment="Left" Margin="381,10,0,0" Name="label3" VerticalAlignment="Top" Width="47" Visibility="Visible" RenderTransformOrigin="0.021,-10.857" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="381,34,0,0" Name="txtContatoEmail" 
+                 VerticalAlignment="Top" Width="233" />
+
+        <Label Content="Telefone" Height="28" HorizontalAlignment="Left" Margin="619,10,0,0" Name="label4" 
+               VerticalAlignment="Top" Width="55" Visibility="Visible" RenderTransformOrigin="-0.718,-1.625" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="628,34,0,0" Name="txtContatoTelefone" VerticalAlignment="Top" Width="137" />
+
+        <Button Content="Inserir" Height="32" HorizontalAlignment="Left" Margin="364,98,0,0" Name="btnInserir" VerticalAlignment="Top" Width="75" Click="btnInserir_Click" />        
+        <Button Content="Atualizar" Height="32" HorizontalAlignment="Right" Margin="0,98,275,0" Name="btnAtualizar" VerticalAlignment="Top" Width="75" Click="btnAtualizar_Click" />
+        <Button Content="Ordenar" Height="32" HorizontalAlignment="Right" Margin="0,98,548,0" Name="btnOrdenar" VerticalAlignment="Top" Width="75" Click="btnOrdenar_Click" />
+        <Button Content="Imprimir" Height="32" HorizontalAlignment="Right" Margin="0,98,627,0" Name="btnImprimir" VerticalAlignment="Top" Width="75" Click="btnImprimir_Click" />
+        <Button Content="Deletar" Height="32" HorizontalAlignment="Right" Margin="0,98,196,0" Name="btnDeletar" VerticalAlignment="Top" Width="75" Click="btnDeletar_Click" />
+        <Button Content="Cancelar" Height="32" HorizontalAlignment="Right" Margin="0,98,24,0" Name="btnCancelar" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click" />
+        <Button Content="Consultar" Height="32" HorizontalAlignment="Right" Margin="0,98,706,0" Name="btnConsultar" VerticalAlignment="Top" Width="75" Click="btnConsultar_Click" />
+        
+
+        <DataGrid AutoGenerateColumns="True" Height="265" HorizontalAlignment="Left" Margin="12,142,0,0" Name="macDataGrid" VerticalAlignment="Top" Width="757" SelectionChanged="macDataGrid_SelectionChanged" />
+        <DocumentPageView HorizontalAlignment="Left" Height="100" Margin="262,295,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+    
+</Window>
