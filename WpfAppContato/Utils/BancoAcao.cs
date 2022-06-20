@@ -62,7 +62,8 @@ namespace WpfAppContato.Utils
                         item.Nome = dados.Nome;
                         item.Email = dados.Email;
                         item.Telefone = dados.Telefone;
-                        contexto.Set<Contato>().Attach(item);
+                        contexto.Contato.Attach(item);
+                        contexto.Entry(item).State = System.Data.Entity.EntityState.Modified;
                         var retorno = contexto.SaveChanges();
                         return true;
                     }
